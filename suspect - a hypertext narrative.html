@@ -11,15 +11,22 @@
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play suspect - a hypertext narrative.</tw-noscript></noscript></tw-story>
 <tw-storydata name="suspect - a hypertext narrative" startnode="1" creator="Twine" creator-version="2.8.1" format="Harlowe" format-version="3.3.8" ifid="6F56B7FE-DD4E-46A7-8878-1F6D890DC7C6" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@import url('https://fonts.googleapis.com/css2?family=Averia+Sans+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap');
+
+
 tw-story {
   font-family: "Averia Sans Libre", sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   font-style: normal;
   color: #FFFFFF;
   background-color: #121214;
 }
 
 h1 {
+  font-family: "Cabin Sketch", static;
+  font-weight: 700;
+  font-style: normal;
+  color: #FFFFFF;
   position: absolute;
   top:-20px;
 }
@@ -34,17 +41,19 @@ tw-link {
 }
 
 tw-link:hover {
-  color: #FFFFFF;
+  color: #FFF1E6;
 }
 
 tw-sidebar {
   display: none;
 }
 
-
-
-
-</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="start" tags="" position="700,325" size="100,100">&lt;audio src=&quot;./audio/storm.mp3&quot; autoplayloop&gt;&lt;/audio&gt;
+tw-story[tags~='storm-background'] {  /* the tag added in step 2 */
+  background-image: url(c:/users/ellio/Documents/Digital Writing Projects/suspect---a-hypertext-narrative/images/storm.jpg);  /* the image added in step 1 */
+  background-size: cover;  /* cover the whole element */
+  background-repeat: no-repeat;  /* do not repeat the background image */
+}
+</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="start" tags="" position="425,275" size="100,100">
 
 &lt;h1&gt; suspect &lt;/h1&gt;
 
@@ -70,11 +79,24 @@ tw-sidebar {
 
 
 
+[[begin]]
+
+</tw-passagedata><tw-passagedata pid="2" name="begin" tags="storm-background" position="600,200" size="100,100">It is hell on Earth out here tonight. When I look up at the sky, as the lightning cracks through the dark and exposes all, I see the last of the old oak&#39;s leaves ripped from its arms, snatched by the wind as it howls and claims all that it touches; it causes the shed to shutter, it threatens to tear its ceiling away. The rain and hail clash against it, it soaks the old wood while it raps against my skin. The thunder growls until it&#39;s in my bones and I feel so damn strong and so alive. 
+
+This is such a perfect night for it. What better way to scare him than by God&#39;s untamed wrath?
+
+My shoes land at the shed door, and I bring my dad&#39;s rusty old key from my pocket to unlock it, and it creaks open. Somehow, it&#39;s colder in here than it is outside. I can see his breath turn to frost as the lightning shoots the shed alight, although I can&#39;t see him.
+
+
+
+
+
+
 [[turn on the light]]
 
-</tw-passagedata><tw-passagedata pid="2" name="turn on the light" tags="" position="825,475" size="100,100">you turn on the light
+&lt;audio src=&quot;c:/users/ellio/Documents/Digital Writing Projects/suspect---a-hypertext-narrative/audio/storm.mp3&quot; autoplay loop&gt;&lt;/audio&gt;
 
-</tw-passagedata></tw-storydata>
+&lt;img class=&quot;story-image&quot; src=&quot;c:users/ellio/Documents/Digital Writing Projects/suspect---a-hypertext-narrative/images/storm.jpg&quot; alt=&quot;the storm&quot; /&gt;</tw-passagedata><tw-passagedata pid="3" name="turn on the light" tags="" position="600,325" size="100,100"></tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
